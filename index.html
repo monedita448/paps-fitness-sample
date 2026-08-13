@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PAPS Fitness | Personal Training Delivered — Boca Raton to Jupiter, FL</title>
+<meta name="description" content="PAPS Fitness with Paul Anthony — mobile, studio, and virtual personal training since 2012. Custom workouts and nutrition guidance for kids, adults, and seniors across South Florida.">
+<link rel="canonical" href="https://papsfitness.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="PAPS Fitness | Movement That Grows With You">
+<meta property="og:description" content="Mobile, studio, and virtual personal training with Paul Anthony. Serving Boca Raton to Jupiter, FL since 2012.">
+<meta property="og:url" content="https://papsfitness.com/">
+<meta property="og:image" content="assets/hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PAPS Fitness | Movement That Grows With You">
+<meta name="twitter:description" content="Mobile, studio, and virtual personal training with Paul Anthony. Serving Boca Raton to Jupiter, FL since 2012.">
+<meta name="twitter:image" content="assets/hero.jpg">
+
+<link rel="icon" href="assets/logo.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ExerciseGym",
+  "name": "PAPS Fitness",
+  "founder": "Paul Anthony",
+  "foundingDate": "2012",
+  "telephone": "+1-561-562-0818",
+  "email": "info@papsfitness.com",
+  "areaServed": ["Boca Raton, FL", "Jupiter, FL", "South Florida"],
+  "sameAs": [
+    "https://www.instagram.com/papsfitnessfl",
+    "https://www.facebook.com/papsfitness",
+    "https://twitter.com/papsfitnessfl"
+  ],
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "05:00",
+    "closes": "21:00"
+  }
+}
+</script>
+
+<style>
+  :root{
+    --bg:#0a0a0c;
+    --bg-alt:#111114;
+    --surface:#18181c;
+    --surface-2:#1f1f24;
+    --border:#2a2a30;
+    --text:#f3f3f1;
+    --text-dim:#a2a2ab;
+    --text-dimmer:#6f6f78;
+    --red:#e8402c;
+    --volt:#b6ff1c;
+    --volt-rgb:182,255,28;
+    --on-volt:#0a0a0c;
+    --red-dim:#c73525;
+    --orange:#f2a71b;
+    --green:#4fb04f;
+    --gray:#9aa0a6;
+    --font-display:'Bebas Neue', sans-serif;
+    --font-body:'Inter', -apple-system, sans-serif;
+    --font-mono:'JetBrains Mono', monospace;
+    --radius:16px;
+    --radius-sm:10px;
+    --container:1180px;
+    --ease:cubic-bezier(.16,.84,.44,1);
+    --banner-h:56px;
+  }
+  @media(max-width:680px){:root{--banner-h:92px;}}
+  html.theme-red{
+    --volt:#e8402c;
+    --volt-rgb:232,64,44;
+    --on-volt:#ffffff;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  html,body{overflow-x:hidden;max-width:100vw;}
+
+  body{
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+  button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit;}
+
+  .container{max-width:var(--container);margin:0 auto;padding:0 24px;}
+
+  h1,h2,h3,h4{font-family:var(--font-display);letter-spacing:.02em;font-weight:400;line-height:1.05;}
+
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:.72rem;
+    letter-spacing:.18em;
+    text-transform:uppercase;
+    color:var(--volt);
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom:14px;
+  }
+  .eyebrow::before{content:"";width:24px;height:2px;background:var(--volt);display:inline-block;}
+
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-head h2{font-size:clamp(2.2rem,5vw,3.4rem);margin-bottom:16px;}
+  .section-head p{color:var(--text-dim);font-size:1.05rem;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+
+  section{padding:110px 0;position:relative;}
+  @media(max-width:768px){section{padding:72px 0;}}
+
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;
+    padding:15px 30px;
+    border-radius:100px;
+    font-weight:700;
+    font-size:.92rem;
+    letter-spacing:.01em;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .3s;
+    white-space:nowrap;
+  }
+  .btn-primary{background:var(--volt);color:var(--on-volt);box-shadow:0 8px 24px -8px rgba(var(--volt-rgb),.4);}
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 30px -8px rgba(var(--volt-rgb),.55);}
+  .btn-ghost{border:1.5px solid var(--border);color:var(--text);}
+  .btn-ghost:hover{border-color:var(--text-dim);transform:translateY(-3px);}
+  .btn-sm{padding:10px 20px;font-size:.82rem;}
+
+  /* ---------- SAMPLE BANNER ---------- */
+  .sample-banner{
+    position:fixed;top:0;left:0;right:0;z-index:1200;height:var(--banner-h);
+    background:var(--bg-alt);border-bottom:1px solid var(--border);
+    display:flex;align-items:center;justify-content:space-between;gap:14px;
+    padding:0 24px;
+  }
+  .banner-left{display:flex;align-items:center;gap:12px;flex-wrap:wrap;}
+  .banner-brand{font-family:var(--font-display);font-size:1.25rem;letter-spacing:.02em;color:var(--text);white-space:nowrap;}
+  .banner-brand em{font-style:normal;color:var(--volt);}
+  .banner-tag{
+    font-family:var(--font-mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;
+    background:var(--volt);color:var(--on-volt);padding:5px 10px;border-radius:100px;font-weight:700;white-space:nowrap;
+  }
+  .theme-switch{display:flex;align-items:center;gap:9px;font-family:var(--font-mono);font-size:.68rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.06em;}
+  .theme-switch .swatch{width:24px;height:24px;border-radius:50%;border:2px solid transparent;transition:border-color .25s,transform .25s;}
+  .theme-switch .swatch:hover{transform:scale(1.1);}
+  .theme-switch .swatch.active{border-color:var(--text);}
+  .swatch-green{background:#b6ff1c;}
+  .swatch-red{background:#e8402c;}
+  @media(max-width:680px){
+    .sample-banner{flex-direction:column;justify-content:center;align-items:flex-start;padding:10px 20px;gap:6px;}
+  }
+
+  /* ---------- NAV ---------- */
+  header{
+    position:fixed;top:var(--banner-h);left:0;right:0;z-index:1000;
+    padding:18px 0;
+    transition:background .4s var(--ease), padding .4s var(--ease), border-color .4s;
+    border-bottom:1px solid transparent;
+  }
+  header.scrolled{
+    background:rgba(10,10,12,.85);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    padding:12px 0;
+    border-color:var(--border);
+  }
+  header .container{display:flex;align-items:center;justify-content:space-between;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--font-display);font-size:1.4rem;letter-spacing:.04em;}
+  .brand img{width:38px;height:38px;border-radius:50%;background:#fff;padding:2px;}
+  .brand span{color:var(--volt);}
+
+  nav.desktop-nav{display:flex;gap:2px;}
+  nav.desktop-nav a{
+    padding:10px 16px;font-size:.85rem;font-weight:600;color:var(--text-dim);
+    border-radius:100px;transition:color .3s, background .3s;
+  }
+  nav.desktop-nav a:hover, nav.desktop-nav a.active{color:var(--text);background:var(--surface);}
+
+  .nav-actions{display:flex;align-items:center;gap:14px;}
+  .call-pill{
+    display:flex;align-items:center;gap:8px;
+    font-family:var(--font-mono);font-size:.82rem;color:var(--text-dim);
+  }
+  .call-pill svg{width:16px;height:16px;stroke:var(--volt);}
+
+  .menu-btn{display:none;width:42px;height:42px;border:1px solid var(--border);border-radius:10px;align-items:center;justify-content:center;flex-direction:column;gap:5px;}
+  .menu-btn span{width:18px;height:2px;background:var(--text);display:block;transition:transform .3s,opacity .3s;}
+  .menu-btn.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .menu-btn.open span:nth-child(2){opacity:0;}
+  .menu-btn.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  .mobile-nav{
+    position:fixed;inset:0;z-index:999;
+    background:var(--bg);
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;
+    transform:translateY(-100%);
+    transition:transform .5s var(--ease);
+    width:100vw;height:100dvh;
+  }
+  .mobile-nav.open{transform:translateY(0);}
+  .mobile-nav a{font-family:var(--font-display);font-size:2.4rem;padding:12px 0;color:var(--text);}
+  .mobile-nav a:active{color:var(--volt);}
+
+  @media(max-width:900px){
+    nav.desktop-nav, .call-pill{display:none;}
+    .menu-btn{display:flex;}
+  }
+
+  /* ---------- HERO ---------- */
+  .hero{
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding:calc(140px + var(--banner-h)) 0 90px;
+    position:relative;
+    overflow:hidden;
+    background:var(--bg);
+  }
+  .hero-bg{position:absolute;inset:0;z-index:0;}
+  .hero-grid{
+    position:absolute;inset:-2px;
+    background-image:linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+    background-size:54px 54px;
+    -webkit-mask-image:radial-gradient(ellipse 75% 65% at 50% 25%, black 35%, transparent 88%);
+    mask-image:radial-gradient(ellipse 75% 65% at 50% 25%, black 35%, transparent 88%);
+    animation:gridDrift 40s linear infinite;
+  }
+  @keyframes gridDrift{0%{background-position:0 0,0 0;}100%{background-position:54px 108px,54px 108px;}}
+  .orb{position:absolute;border-radius:50%;filter:blur(80px);}
+  .orb-1{width:520px;height:520px;background:radial-gradient(circle, var(--volt), transparent 68%);opacity:.28;top:-180px;left:-140px;animation:float1 19s ease-in-out infinite;}
+  .orb-2{width:460px;height:460px;background:radial-gradient(circle, var(--orange), transparent 68%);opacity:.32;bottom:-200px;right:-120px;animation:float2 23s ease-in-out infinite;}
+  .orb-3{width:340px;height:340px;background:radial-gradient(circle, var(--green), transparent 68%);opacity:.24;top:36%;left:58%;animation:float3 27s ease-in-out infinite;}
+  @keyframes float1{0%,100%{transform:translate(0,0)}50%{transform:translate(70px,50px)}}
+  @keyframes float2{0%,100%{transform:translate(0,0)}50%{transform:translate(-60px,-40px)}}
+  @keyframes float3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-50px,60px) scale(1.18)}}
+  .spotlight{position:absolute;inset:0;pointer-events:none;background:radial-gradient(560px circle at var(--mx,50%) var(--my,28%), rgba(var(--volt-rgb),.12), transparent 62%);}
+  @media(max-width:900px){.orb-3{display:none;}}
+
+  .hero .container{position:relative;z-index:2;}
+  .hero-layout{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center;}
+  @media(max-width:960px){.hero-layout{grid-template-columns:1fr;}}
+  .hero-content{max-width:640px;}
+  .hero h1{font-size:clamp(2.6rem,6.4vw,4.6rem);margin-bottom:22px;}
+  .hero h1 em{
+    font-style:normal;
+    background:linear-gradient(95deg, var(--volt) 10%, var(--orange) 90%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .hero .lead{font-size:1.1rem;color:var(--text-dim);max-width:520px;margin-bottom:30px;}
+  .hero-ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:34px;}
+
+  .hero-picker{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:44px;}
+  .picker-chip{
+    padding:10px 18px;border:1px solid var(--border);border-radius:100px;
+    font-size:.8rem;font-weight:600;color:var(--text-dim);background:rgba(255,255,255,.02);
+    transition:border-color .3s, color .3s, background .3s, transform .3s;
+  }
+  .picker-chip:hover{border-color:var(--text-dim);color:var(--text);transform:translateY(-2px);}
+  .picker-chip.active{border-color:var(--volt);color:#fff;background:rgba(var(--volt-rgb),.18);}
+
+  .stat-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:560px;border-top:1px solid var(--border);padding-top:26px;}
+  .stat-row div{}
+  .stat-num{font-family:var(--font-display);font-size:2rem;color:var(--volt);}
+  .stat-label{font-size:.72rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.07em;font-family:var(--font-mono);}
+  @media(max-width:640px){.stat-row{grid-template-columns:repeat(2,1fr);row-gap:24px;}}
+
+  /* animated brand mark visual */
+  .hero-visual{position:relative;display:flex;align-items:center;justify-content:center;aspect-ratio:1/1;max-width:460px;margin:0 auto;}
+  .hero-visual svg{width:100%;height:100%;overflow:visible;}
+  .hv-ring{transform-origin:200px 200px;}
+  .hv-ring-1{animation:spin 34s linear infinite;}
+  .hv-ring-2{animation:spin 46s linear infinite reverse;}
+  .hv-ring-3{animation:spin 60s linear infinite;}
+  @keyframes spin{to{transform:rotate(360deg);}}
+  .hv-node{animation:pulseNode 2.6s ease-in-out infinite;}
+  .hv-node:nth-child(2){animation-delay:.3s;}
+  .hv-node:nth-child(3){animation-delay:.6s;}
+  @keyframes pulseNode{0%,100%{opacity:.4;r:4;}50%{opacity:1;r:6.5;}}
+  .hv-figure{animation:figureFloat 5s ease-in-out infinite;transform-origin:200px 200px;}
+  @keyframes figureFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-8px);}}
+  .hv-draw{stroke-dasharray:900;stroke-dashoffset:900;animation:drawIn 2.4s var(--ease) forwards;}
+  @keyframes drawIn{to{stroke-dashoffset:0;}}
+  @media(max-width:960px){.hero-visual{max-width:320px;margin-top:10px;}}
+
+  /* rounded frame overlay, echoes TITAN's mockup-card treatment */
+  .hero-frame{
+    position:absolute;inset:18px;z-index:1;pointer-events:none;
+    border:1px solid rgba(255,255,255,.08);border-radius:36px;
+  }
+  @media(max-width:640px){.hero-frame{inset:8px;border-radius:22px;}}
+
+  /* floating avatar-stack stat capsule */
+  .hero-stat-capsule{
+    position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);z-index:3;
+    display:flex;align-items:center;gap:12px;
+    background:rgba(17,17,20,.85);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border:1px solid var(--border);border-radius:100px;padding:8px 18px 8px 8px;
+    transition:transform .3s var(--ease), border-color .3s;
+  }
+  .hero-stat-capsule:hover{transform:translateX(-50%) translateY(-4px);border-color:var(--volt);}
+  .capsule-avatars{display:flex;}
+  .capsule-avatars img{
+    width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid var(--bg-alt);
+    margin-left:-10px;
+  }
+  .capsule-avatars img:first-child{margin-left:0;}
+  .capsule-text{font-size:.8rem;font-weight:700;color:var(--text);white-space:nowrap;}
+  .capsule-text span{display:block;font-size:.68rem;font-weight:500;color:var(--text-dim);font-family:var(--font-mono);}
+  @media(max-width:960px){.hero-stat-capsule{position:static;transform:none;margin:22px auto 0;width:fit-content;}
+    .hero-stat-capsule:hover{transform:translateY(-4px);}}
+
+  .scroll-cue{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--text-dimmer);font-family:var(--font-mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;}
+  .scroll-cue .line{width:1px;height:34px;background:linear-gradient(var(--text-dimmer),transparent);animation:scrollcue 1.8s infinite;}
+  @keyframes scrollcue{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}50.01%{transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
+
+  /* ---------- MARQUEE ---------- */
+  .marquee-band{border-bottom:1px solid var(--border);overflow:hidden;padding:16px 0;background:var(--bg-alt);position:relative;z-index:2;}
+  .marquee-track{display:flex;gap:44px;white-space:nowrap;width:max-content;animation:marquee 28s linear infinite;}
+  .marquee-track span{font-family:var(--font-display);font-size:1.25rem;letter-spacing:.05em;color:var(--text-dimmer);display:inline-flex;align-items:center;gap:16px;}
+  .marquee-track span b{color:var(--volt);font-weight:400;}
+  @keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+  /* ---------- CUSTOM CURSOR ---------- */
+  .cursor-dot, .cursor-ring{position:fixed;top:0;left:0;border-radius:50%;pointer-events:none;z-index:9999;}
+  .cursor-dot{width:6px;height:6px;background:var(--volt);transform:translate(-50%,-50%);opacity:0;transition:opacity .2s;}
+  .cursor-ring{width:32px;height:32px;border:1.5px solid rgba(var(--volt-rgb),.6);transform:translate(-50%,-50%);opacity:0;transition:opacity .2s, width .2s, height .2s, border-color .2s;}
+  .cursor-ring.hovering{width:54px;height:54px;border-color:var(--volt);background:rgba(var(--volt-rgb),.1);}
+  body.cursor-ready .cursor-dot, body.cursor-ready .cursor-ring{opacity:1;}
+  @media(hover:none), (pointer:coarse){.cursor-dot,.cursor-ring{display:none !important;}}
+
+  /* ---------- TILT ---------- */
+  [data-tilt]{transition:transform .25s var(--ease);will-change:transform;}
+
+  /* ---------- REVEAL ---------- */
+  .reveal{opacity:0;transform:translateY(36px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1;transform:translateY(0);}
+  .reveal-stagger.in > *{transition-delay:calc(var(--i,0) * 90ms);}
+
+  /* ---------- TRAINER ---------- */
+  .trainer-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center;}
+  .trainer-photo{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;background:var(--surface);}
+  .trainer-photo img{width:100%;height:100%;object-fit:cover;}
+  .trainer-badge{
+    position:absolute;bottom:18px;left:18px;background:rgba(10,10,12,.8);backdrop-filter:blur(8px);
+    padding:12px 18px;border-radius:100px;font-family:var(--font-mono);font-size:.75rem;color:var(--text);border:1px solid var(--border);
+  }
+  .quote-mark{font-family:var(--font-display);font-size:1.6rem;color:var(--volt);margin-bottom:10px;display:block;}
+  .trainer-copy p{color:var(--text-dim);margin-bottom:18px;font-size:1.03rem;}
+  .trainer-copy .pull{font-size:1.4rem;font-family:var(--font-display);letter-spacing:.01em;color:var(--text);margin-bottom:22px;}
+  @media(max-width:860px){.trainer-grid{grid-template-columns:1fr;}}
+
+  /* ---------- WHO WE TRAIN — bento grid ---------- */
+  .bento-grid{
+    display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:16px;
+    grid-template-areas:
+      "kids   adults  photo   photo"
+      "seniors focus  photo   photo"
+      "area   groups  format  format";
+  }
+  .bento-tile{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);
+    padding:22px;display:flex;flex-direction:column;justify-content:center;gap:6px;
+    transition:border-color .3s, transform .3s;position:relative;overflow:hidden;
+  }
+  .bento-tile:hover{border-color:var(--volt);transform:translateY(-4px);}
+  .bento-tile h4{font-family:var(--font-body);font-weight:700;font-size:.98rem;}
+  .bento-tile p{color:var(--text-dim);font-size:.84rem;}
+  .bento-icon{width:34px;height:34px;border-radius:10px;background:var(--surface-2);display:flex;align-items:center;justify-content:center;margin-bottom:4px;}
+  .bento-icon svg{width:17px;height:17px;stroke:var(--volt);}
+  .bento-kids{grid-area:kids;}
+  .bento-adults{grid-area:adults;}
+  .bento-seniors{grid-area:seniors;}
+  .bento-focus{grid-area:focus;}
+  .bento-groups{grid-area:groups;}
+  .bento-area{grid-area:area;justify-content:center;}
+  .bento-format{grid-area:format;flex-direction:row;align-items:center;gap:18px;}
+  .bento-photo{
+    grid-area:photo;padding:0;border-radius:var(--radius);
+  }
+  .bento-photo img{width:100%;height:100%;object-fit:cover;}
+  .bento-photo-overlay{
+    position:absolute;inset:0;background:linear-gradient(0deg, rgba(6,6,8,.85) 0%, rgba(6,6,8,.1) 60%, transparent 100%);
+    display:flex;align-items:flex-end;padding:20px;
+  }
+  .bento-photo-overlay img{width:32px;height:32px;border-radius:50%;background:#fff;padding:2px;}
+  .bento-stat-num{font-family:var(--font-display);font-size:2.4rem;color:var(--volt);line-height:1;}
+  .bento-stat-label{font-size:.72rem;color:var(--text-dim);text-transform:uppercase;letter-spacing:.07em;font-family:var(--font-mono);}
+  @media(max-width:860px){
+    .bento-grid{grid-template-columns:1fr 1fr;grid-auto-rows:140px;
+      grid-template-areas:
+        "kids    adults"
+        "seniors focus"
+        "photo   photo"
+        "area    groups"
+        "format  format";
+    }
+  }
+  @media(max-width:560px){
+    .bento-grid{grid-template-columns:1fr;grid-auto-rows:auto;
+      grid-template-areas:
+        "kids" "adults" "seniors" "focus" "photo" "area" "groups" "format";
+    }
+    .bento-tile{min-height:110px;}
+    .bento-photo{min-height:220px;}
+  }
+
+  /* ---------- SERVICES ---------- */
+  .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .service-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;
+    transition:transform .4s var(--ease), border-color .4s;
+    display:flex;flex-direction:column;
+  }
+  .service-card:hover{transform:translateY(-8px);border-color:var(--accent,var(--red));}
+  .service-card.flash{border-color:var(--accent,var(--red));box-shadow:0 0 0 3px color-mix(in srgb, var(--accent,var(--red)) 30%, transparent);}
+  .service-img{aspect-ratio:4/3;overflow:hidden;position:relative;}
+  .service-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+  .service-card:hover .service-img img{transform:scale(1.08);}
+  .service-num{
+    position:absolute;top:12px;left:12px;font-family:var(--font-mono);font-size:.75rem;
+    background:rgba(10,10,12,.7);color:var(--accent,var(--red));padding:5px 10px;border-radius:100px;border:1px solid rgba(255,255,255,.15);
+  }
+  .service-body{padding:22px;flex:1;display:flex;flex-direction:column;}
+  .service-body h4{font-family:var(--font-body);font-weight:800;font-size:1.05rem;margin-bottom:8px;}
+  .service-body p{color:var(--text-dim);font-size:.9rem;flex:1;}
+  .service-dot{width:8px;height:8px;border-radius:50%;background:var(--accent,var(--red));margin-bottom:10px;}
+  @media(max-width:980px){.services-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.services-grid{grid-template-columns:1fr;}}
+
+  /* ---------- PROOF STRIP ---------- */
+  .proof-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .proof-card{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:3/4;}
+  .proof-card img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+  .proof-card:hover img{transform:scale(1.06);}
+  .proof-overlay{
+    position:absolute;inset:0;background:linear-gradient(0deg, rgba(6,6,8,.92) 0%, rgba(6,6,8,.15) 55%, transparent 100%);
+    display:flex;flex-direction:column;justify-content:flex-end;padding:22px;
+  }
+  .proof-overlay h4{font-family:var(--font-body);font-weight:800;font-size:1rem;margin-bottom:6px;}
+  .proof-overlay p{font-size:.84rem;color:var(--text-dim);}
+  @media(max-width:860px){.proof-grid{grid-template-columns:1fr;}.proof-card{aspect-ratio:16/10;}}
+
+  /* ---------- NUTRITION ---------- */
+  .nutri-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:40px;}
+  .nutri-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);
+    overflow:hidden;cursor:pointer;transition:border-color .3s, background .3s, transform .3s;
+  }
+  .nutri-card:hover, .nutri-card.open{border-color:var(--orange);background:var(--surface-2);}
+  .nutri-card:hover{transform:translateY(-4px);}
+  .nutri-img{aspect-ratio:16/9;overflow:hidden;}
+  .nutri-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+  .nutri-card:hover .nutri-img img{transform:scale(1.08);}
+  .nutri-body{padding:20px 22px;}
+  .nutri-card h4{font-family:var(--font-body);font-weight:800;font-size:1rem;margin-bottom:8px;display:flex;justify-content:space-between;align-items:center;}
+  .nutri-card h4 .plus{font-family:var(--font-mono);color:var(--orange);transition:transform .3s;}
+  .nutri-card.open h4 .plus{transform:rotate(45deg);}
+  .nutri-card p.preview{color:var(--text-dim);font-size:.85rem;}
+  .nutri-panel{max-height:0;overflow:hidden;transition:max-height .5s var(--ease);}
+  .nutri-card.open .nutri-panel{max-height:600px;}
+  .nutri-panel-inner{padding-top:14px;font-size:.85rem;color:var(--text-dim);border-top:1px solid var(--border);margin-top:12px;}
+  .nutri-panel-inner b{color:var(--text);}
+  .nutri-panel-inner p{margin-bottom:10px;}
+  @media(max-width:980px){.nutri-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.nutri-grid{grid-template-columns:1fr;}}
+
+  .science-box{
+    display:grid;grid-template-columns:1fr auto;gap:30px;align-items:center;
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:32px 34px;
+  }
+  .science-box p{color:var(--text-dim);font-size:.95rem;}
+  .science-box h4{font-family:var(--font-body);font-weight:800;margin-bottom:8px;font-size:1.05rem;}
+  @media(max-width:700px){.science-box{grid-template-columns:1fr;text-align:left;}}
+
+  .doc-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px;}
+  .doc-link{
+    display:flex;align-items:center;gap:10px;padding:12px 18px;border:1px solid var(--border);border-radius:100px;
+    font-size:.85rem;color:var(--text-dim);transition:border-color .3s, color .3s;
+  }
+  .doc-link:hover{border-color:var(--green);color:var(--text);}
+
+  /* ---------- SHOP ---------- */
+  .shop-band{background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);}
+  .shop-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-bottom:34px;}
+  .shop-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);
+    padding:26px 18px;text-align:center;transition:transform .3s, border-color .3s;
+  }
+  .shop-card:hover{transform:translateY(-6px);border-color:var(--volt);}
+  .shop-icon{width:52px;height:52px;margin:0 auto 14px;border-radius:50%;background:var(--surface-2);display:flex;align-items:center;justify-content:center;}
+  .shop-icon svg{width:24px;height:24px;stroke:var(--volt);}
+  .shop-card h5{font-size:.88rem;font-weight:700;margin-bottom:4px;}
+  .shop-card span{font-size:.78rem;color:var(--text-dim);}
+  .shop-note{font-size:.78rem;color:var(--text-dimmer);text-align:center;margin-top:18px;}
+  @media(max-width:860px){.shop-grid{grid-template-columns:1fr 1fr;}}
+
+  /* ---------- TESTIMONIALS ---------- */
+  .testi-wrap{position:relative;max-width:820px;margin:0 auto;}
+  .testi-track-outer{overflow:hidden;border-radius:var(--radius);}
+  .testi-track{display:flex;transition:transform .6s var(--ease);}
+  .testi-slide{min-width:100%;padding:8px;}
+  .testi-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    padding:40px;display:flex;gap:24px;align-items:flex-start;min-height:280px;
+  }
+  .testi-avatar{width:64px;height:64px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid var(--volt);}
+  .testi-avatar img{width:100%;height:100%;object-fit:cover;}
+  .testi-body q{display:block;font-size:1.02rem;color:var(--text);line-height:1.65;margin-bottom:18px;quotes:none;}
+  .testi-name{font-weight:800;font-size:.95rem;}
+  .testi-role{font-size:.8rem;color:var(--text-dim);font-family:var(--font-mono);}
+  @media(max-width:640px){.testi-card{flex-direction:column;padding:28px 22px;}}
+
+  .testi-controls{display:flex;justify-content:center;align-items:center;gap:20px;margin-top:30px;}
+  .testi-arrow{width:44px;height:44px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:border-color .3s, background .3s;}
+  .testi-arrow:hover{border-color:var(--volt);background:var(--surface);}
+  .testi-arrow svg{width:18px;height:18px;stroke:var(--text);}
+  .testi-dots{display:flex;gap:8px;}
+  .testi-dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:background .3s, width .3s;}
+  .testi-dot.active{background:var(--volt);width:22px;border-radius:6px;}
+
+  .testi-avatars{display:flex;justify-content:center;gap:10px;margin-top:38px;flex-wrap:wrap;}
+  .testi-avatars button{width:42px;height:42px;border-radius:50%;overflow:hidden;opacity:.45;transition:opacity .3s, transform .3s;border:2px solid transparent;}
+  .testi-avatars button.active{opacity:1;border-color:var(--volt);transform:scale(1.12);}
+  .testi-avatars img{width:100%;height:100%;object-fit:cover;}
+
+  /* ---------- CONTACT ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+  .contact-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:36px;}
+  .contact-row{display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-bottom:1px solid var(--border);}
+  .contact-row:last-child{border-bottom:none;}
+  .contact-row svg{width:20px;height:20px;stroke:var(--volt);flex-shrink:0;margin-top:2px;}
+  .contact-row h5{font-size:.9rem;font-weight:700;margin-bottom:3px;}
+  .contact-row p, .contact-row a{color:var(--text-dim);font-size:.9rem;}
+  .contact-row a:hover{color:var(--volt);}
+  .hours-list{display:grid;gap:6px;margin-top:6px;}
+  .hours-list div{display:flex;justify-content:space-between;font-size:.85rem;color:var(--text-dim);font-family:var(--font-mono);}
+
+  form.contact-form{display:grid;gap:14px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .contact-form input, .contact-form textarea, .contact-form select{
+    width:100%;background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-sm);
+    padding:14px 16px;color:var(--text);font-family:inherit;font-size:.9rem;transition:border-color .3s;
+  }
+  .contact-form input:focus, .contact-form textarea:focus, .contact-form select:focus{outline:none;border-color:var(--volt);}
+  .contact-form textarea{min-height:110px;resize:vertical;}
+  .contact-form label{font-size:.78rem;color:var(--text-dim);margin-bottom:-6px;display:block;}
+  @media(max-width:900px){.contact-grid{grid-template-columns:1fr;}.form-row{grid-template-columns:1fr;}}
+
+  /* ---------- FOOTER ---------- */
+  footer{border-top:1px solid var(--border);padding:50px 0 30px;background:var(--bg-alt);}
+  .footer-top{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;margin-bottom:36px;}
+  .footer-nav{display:flex;gap:22px;flex-wrap:wrap;}
+  .footer-nav a{font-size:.85rem;color:var(--text-dim);}
+  .footer-nav a:hover{color:var(--text);}
+  .footer-social{display:flex;gap:12px;}
+  .footer-social a{width:38px;height:38px;border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;transition:border-color .3s,background .3s;}
+  .footer-social a:hover{border-color:var(--volt);background:var(--surface);}
+  .footer-social svg{width:16px;height:16px;stroke:var(--text);}
+  .footer-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:.78rem;color:var(--text-dimmer);border-top:1px solid var(--border);padding-top:24px;}
+
+  .back-top{
+    position:fixed;bottom:26px;right:26px;width:46px;height:46px;border-radius:50%;
+    background:var(--volt);display:flex;align-items:center;justify-content:center;z-index:500;
+    opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .35s, transform .35s;
+    box-shadow:0 10px 24px -8px rgba(var(--volt-rgb),.45);
+  }
+  .back-top.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+  .back-top svg{width:18px;height:18px;stroke:var(--on-volt);}
+
+  /* ---------- CONSULT TRIGGER + MODAL ---------- */
+  .consult-trigger{
+    position:fixed;bottom:26px;left:26px;z-index:500;
+    display:flex;align-items:center;gap:10px;padding:13px 20px 13px 14px;border-radius:100px;
+    background:var(--volt);color:var(--on-volt);font-weight:700;font-size:.85rem;
+    box-shadow:0 10px 24px -8px rgba(var(--volt-rgb),.45);
+    opacity:0;pointer-events:none;transform:translateY(10px);transition:opacity .35s, transform .35s;
+  }
+  .consult-trigger.show{opacity:1;pointer-events:auto;transform:translateY(0);}
+  .consult-trigger:hover{transform:translateY(-3px);}
+  .consult-trigger .pulse-dot{width:9px;height:9px;border-radius:50%;background:var(--on-volt);position:relative;flex-shrink:0;}
+  .consult-trigger .pulse-dot::after{
+    content:"";position:absolute;inset:-4px;border-radius:50%;border:1.5px solid var(--on-volt);
+    animation:pulseDot 1.8s ease-out infinite;
+  }
+  @keyframes pulseDot{0%{transform:scale(.6);opacity:.8;}100%{transform:scale(1.8);opacity:0;}}
+  @media(max-width:640px){.consult-trigger span.trigger-label{display:none;}.consult-trigger{padding:14px;}}
+
+  .modal-overlay{
+    position:fixed;inset:0;z-index:2000;background:rgba(6,6,8,.82);backdrop-filter:blur(6px);
+    display:flex;align-items:center;justify-content:center;padding:20px;
+    opacity:0;pointer-events:none;transition:opacity .3s var(--ease);
+  }
+  .modal-overlay.open{opacity:1;pointer-events:auto;}
+  .modal-card{
+    background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    max-width:760px;width:100%;display:grid;grid-template-columns:.85fr 1.15fr;overflow:hidden;
+    transform:translateY(24px) scale(.97);transition:transform .35s var(--ease);max-height:90vh;
+  }
+  .modal-overlay.open .modal-card{transform:translateY(0) scale(1);}
+  .modal-photo{position:relative;display:none;}
+  .modal-photo img{width:100%;height:100%;object-fit:cover;}
+  .modal-photo .modal-photo-tag{
+    position:absolute;bottom:16px;left:16px;background:rgba(10,10,12,.75);backdrop-filter:blur(6px);
+    padding:8px 14px;border-radius:100px;font-family:var(--font-mono);font-size:.7rem;border:1px solid var(--border);
+  }
+  @media(min-width:640px){.modal-photo{display:block;}}
+  .modal-body{padding:36px;position:relative;overflow-y:auto;}
+  .modal-close{position:absolute;top:16px;right:16px;width:34px;height:34px;border-radius:50%;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;transition:border-color .3s,background .3s;}
+  .modal-close:hover{border-color:var(--volt);background:var(--surface-2);}
+  .modal-close svg{width:15px;height:15px;stroke:var(--text);}
+  .modal-body h3{font-family:var(--font-display);font-size:1.9rem;margin-bottom:6px;}
+  .modal-body h3 em{font-style:normal;color:var(--volt);}
+  .modal-body .modal-sub{color:var(--text-dim);font-size:.9rem;margin-bottom:24px;}
+  .modal-form{display:grid;gap:12px;}
+  .modal-form input{
+    width:100%;background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-sm);
+    padding:14px 16px;color:var(--text);font-family:inherit;font-size:.9rem;transition:border-color .3s;
+  }
+  .modal-form input:focus{outline:none;border-color:var(--volt);}
+  .modal-form button{width:100%;justify-content:center;margin-top:4px;}
+  .modal-fineprint{font-size:.72rem;color:var(--text-dimmer);margin-top:14px;}
+
+  ::selection{background:var(--volt);color:var(--on-volt);}
+</style>
+</head>
+<body>
+
+<div class="sample-banner">
+  <div class="banner-left">
+    <span class="banner-brand">COLHQ<em>.com</em></span>
+    <span class="banner-tag">Sample Website</span>
+  </div>
+  <div class="theme-switch">
+    <span>Theme</span>
+    <button class="swatch swatch-green active" id="themeGreenBtn" aria-label="Switch to green theme"></button>
+    <button class="swatch swatch-red" id="themeRedBtn" aria-label="Switch to red theme"></button>
+  </div>
+</div>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<header id="siteHeader">
+  <div class="container">
+    <a href="#top" class="brand"><img src="assets/logo.jpg" alt="PAPS Fitness logo"> PAPS<span>FITNESS</span></a>
+    <nav class="desktop-nav" id="desktopNav">
+      <a href="#trainer">Trainer</a>
+      <a href="#services">Services</a>
+      <a href="#nutrition">Nutrition</a>
+      <a href="#shop">Shop</a>
+      <a href="#testimonials">Results</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:5615620818" class="call-pill">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        (561) 562-0818
+      </a>
+      <a href="#contact" class="btn btn-primary btn-sm">Book a Session</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <a href="#trainer">Trainer</a>
+  <a href="#services">Services</a>
+  <a href="#nutrition">Nutrition</a>
+  <a href="#shop">Shop</a>
+  <a href="#testimonials">Results</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero" id="heroSection">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+      <div class="spotlight" id="heroSpotlight"></div>
+    </div>
+    <div class="container">
+      <div class="hero-layout">
+        <div class="hero-content">
+          <div class="eyebrow">PAPS Fitness · Est. 2012</div>
+          <h1>Movement that<br>grows <em>with you.</em></h1>
+          <p class="lead">Personal training that comes to you — at home, outdoors, in the studio, or online. Custom programs and nutrition guidance from Paul Anthony, serving clients from Boca Raton to Jupiter, FL.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary magnetic">Book a Session</a>
+            <a href="#trainer" class="btn btn-ghost">Meet Paul →</a>
+          </div>
+          <div class="hero-picker" id="heroPicker">
+            <button class="picker-chip" data-target="0">Mobile</button>
+            <button class="picker-chip" data-target="1">Studio</button>
+            <button class="picker-chip" data-target="2">Virtual</button>
+            <button class="picker-chip" data-target="3">Nutrition</button>
+          </div>
+          <div class="stat-row">
+            <div><div class="stat-num" data-count="2012" data-format="year">0</div><div class="stat-label">Founded</div></div>
+            <div><div class="stat-num" data-count="4">0</div><div class="stat-label">Training Formats</div></div>
+            <div><div class="stat-num" data-count="4" data-suffix="+">0</div><div class="stat-label">Ages &amp; Up Trained</div></div>
+            <div><div class="stat-num" data-count="10">0</div><div class="stat-label">Client Stories</div></div>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <svg viewBox="0 0 400 400">
+            <g class="hv-ring hv-ring-1">
+              <circle cx="200" cy="200" r="170" fill="none" stroke="var(--red)" stroke-width="1.2" stroke-opacity=".35" stroke-dasharray="4 10"/>
+            </g>
+            <g class="hv-ring hv-ring-2">
+              <circle cx="200" cy="200" r="138" fill="none" stroke="var(--orange)" stroke-width="1.2" stroke-opacity=".4" stroke-dasharray="2 8"/>
+            </g>
+            <g class="hv-ring hv-ring-3">
+              <circle cx="200" cy="200" r="106" fill="none" stroke="var(--green)" stroke-width="1.2" stroke-opacity=".4" stroke-dasharray="1 6"/>
+            </g>
+            <circle cx="200" cy="200" r="170" fill="none" stroke="var(--volt)" stroke-width="1.6" class="hv-draw"/>
+            <g class="hv-figure">
+              <line x1="200" y1="110" x2="200" y2="220" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="200" y1="140" x2="150" y2="110" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="200" y1="140" x2="250" y2="110" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="200" y1="220" x2="165" y2="290" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round"/>
+              <line x1="200" y1="220" x2="235" y2="290" stroke="var(--text)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="200" cy="90" r="18" fill="var(--bg)" stroke="var(--text)" stroke-width="2.5"/>
+            </g>
+            <circle class="hv-node" cx="200" cy="30" r="4" fill="var(--red)"/>
+            <circle class="hv-node" cx="370" cy="200" r="4" fill="var(--orange)"/>
+            <circle class="hv-node" cx="200" cy="370" r="4" fill="var(--green)"/>
+            <circle class="hv-node" cx="30" cy="200" r="4" fill="var(--red)"/>
+            <circle class="hv-node" cx="317" cy="83" r="3.5" fill="var(--orange)"/>
+            <circle class="hv-node" cx="317" cy="317" r="3.5" fill="var(--green)"/>
+            <circle class="hv-node" cx="83" cy="317" r="3.5" fill="var(--red)"/>
+            <circle class="hv-node" cx="83" cy="83" r="3.5" fill="var(--orange)"/>
+          </svg>
+          <a href="#testimonials" class="hero-stat-capsule" id="heroStatCapsule">
+            <div class="capsule-avatars">
+              <img src="assets/c1.jpg" alt="" loading="lazy">
+              <img src="assets/c3.jpg" alt="" loading="lazy">
+              <img src="assets/c4.jpg" alt="" loading="lazy">
+              <img src="assets/c8.jpg" alt="" loading="lazy">
+            </div>
+            <div class="capsule-text">10 Client Stories<span>Real results, real people →</span></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-frame"></div>
+    <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+  </section>
+
+  <div class="marquee-band" aria-hidden="true">
+    <div class="marquee-track">
+      <span>MOBILE <b>·</b> STUDIO <b>·</b> VIRTUAL <b>·</b> NUTRITION <b>·</b> SINCE 2012 <b>·</b> BOCA RATON TO JUPITER <b>·</b></span>
+      <span>MOBILE <b>·</b> STUDIO <b>·</b> VIRTUAL <b>·</b> NUTRITION <b>·</b> SINCE 2012 <b>·</b> BOCA RATON TO JUPITER <b>·</b></span>
+    </div>
+  </div>
+
+  <!-- TRAINER -->
+  <section id="trainer">
+    <div class="container">
+      <div class="trainer-grid">
+        <div class="trainer-photo reveal">
+          <img src="assets/trainer.jpg" alt="Paul Anthony, founder of PAPS Fitness" loading="lazy" decoding="async">
+          <div class="trainer-badge">Paul Anthony · Founder &amp; Trainer</div>
+        </div>
+        <div class="trainer-copy reveal">
+          <div class="eyebrow">Meet Your Trainer</div>
+          <p class="pull">"Movement That Grows With You"</p>
+          <p>Since 2012, Paul Anthony has been transforming lives — from young athletes finding their stride, to adults rebuilding strength, to seniors regaining independence. At PAPS Fitness, it's never just about exercise. It's about restoring confidence, resilience, and real-world movement for life.</p>
+          <p>Wherever you're starting, we meet you there and build you stronger from the inside out.</p>
+          <p style="color:var(--text);font-weight:600;">"We bring fitness to you and help you grow stronger for life."</p>
+          <a href="#contact" class="btn btn-ghost" style="margin-top:10px;">Start Your Journey →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE TRAIN -->
+  <section id="who" style="background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Who We Train</div>
+        <h2>"Strength for Every Generation"</h2>
+        <p>One trainer, every stage of life — here's what that looks like in practice.</p>
+      </div>
+      <div class="bento-grid reveal-stagger">
+        <div class="bento-tile bento-kids" data-tilt>
+          <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg></div>
+          <h4>Kids (4+) &amp; Teens</h4>
+          <p>Building the foundations for confidence, coordination, and strength early.</p>
+        </div>
+        <div class="bento-tile bento-adults" data-tilt>
+          <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 6.5 17.5 17.5M6.5 17.5 17.5 6.5"/><circle cx="12" cy="12" r="9"/></svg></div>
+          <h4>Adults</h4>
+          <p>Results-driven strength &amp; conditioning built around busy schedules.</p>
+        </div>
+        <a href="#trainer" class="bento-tile bento-photo" data-tilt style="text-decoration:none;">
+          <img src="assets/whowetrain.jpg" alt="PAPS Fitness training session" loading="lazy" decoding="async">
+          <div class="bento-photo-overlay">
+            <img src="assets/logo.jpg" alt="PAPS Fitness">
+          </div>
+        </a>
+        <div class="bento-tile bento-seniors" data-tilt>
+          <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 1 0 0 8 4 4 0 0 0 0-8Z"/><path d="M5 21a7 7 0 0 1 14 0"/></svg></div>
+          <h4>Seniors</h4>
+          <p>Balance, functional strength, and pain-free independence.</p>
+        </div>
+        <div class="bento-tile bento-focus" data-tilt>
+          <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".5" fill="currentColor"/></svg></div>
+          <h4>Posture, Alignment &amp; Breathing</h4>
+          <p>The focus in every single session, regardless of format.</p>
+        </div>
+        <div class="bento-tile bento-area">
+          <div class="bento-stat-label" style="margin-bottom:6px;">Service Area</div>
+          <h4 style="font-family:var(--font-display);font-weight:400;font-size:1.3rem;">Boca Raton → Jupiter, FL</h4>
+        </div>
+        <div class="bento-tile bento-groups" data-tilt>
+          <div class="bento-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h4>Individual &amp; Group Sessions</h4>
+          <p>Go solo, or bring a friend and split the energy.</p>
+        </div>
+        <div class="bento-tile bento-format">
+          <div class="bento-stat-num">2012</div>
+          <div>
+            <div class="bento-stat-label">Founded</div>
+            <p style="margin-top:2px;">Still training the same way — in person, hands-on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Our Services</div>
+        <h2>However you train, we meet you there.</h2>
+        <p>Four ways to work with PAPS Fitness — pick what fits your life.</p>
+      </div>
+      <div class="services-grid reveal-stagger">
+        <div class="service-card" data-tilt data-service-idx="0" style="--accent:var(--red)">
+          <div class="service-img"><span class="service-num">01</span><img src="assets/class1.jpg" alt="Mobile fitness delivery session" loading="lazy" decoding="async"></div>
+          <div class="service-body">
+            <span class="service-dot"></span>
+            <h4>Mobile Fitness Delivery</h4>
+            <p>You tell us when and where — we bring all the equipment and make it happen. Home, office, or your own gym. Individual and group sessions with close attention to posture, alignment, balance, and breathing.</p>
+          </div>
+        </div>
+        <div class="service-card" data-tilt data-service-idx="1" style="--accent:var(--volt)">
+          <div class="service-img"><span class="service-num">02</span><img src="assets/class2.jpg" alt="Studio and outdoor training session" loading="lazy" decoding="async"></div>
+          <div class="service-body">
+            <span class="service-dot"></span>
+            <h4>Studio / Outdoor Sessions</h4>
+            <p>Prefer to come to us? We offer a private studio and outdoor sessions — solo or with a friend, individual or group.</p>
+          </div>
+        </div>
+        <div class="service-card" data-tilt data-service-idx="2" style="--accent:var(--green)">
+          <div class="service-img"><span class="service-num">03</span><img src="assets/class3.jpg" alt="Virtual one-on-one training" loading="lazy" decoding="async"></div>
+          <div class="service-body">
+            <span class="service-dot"></span>
+            <h4>Virtual One-on-One</h4>
+            <p>Ideal if you can't meet in person regularly. Custom workouts built around whatever equipment you have on hand — we get creative.</p>
+          </div>
+        </div>
+        <div class="service-card" data-tilt data-service-idx="3" style="--accent:var(--orange)">
+          <div class="service-img"><span class="service-num">04</span><img src="assets/class4.jpg" alt="Nutrition guidance session" loading="lazy" decoding="async"></div>
+          <div class="service-body">
+            <span class="service-dot"></span>
+            <h4>Nutrition Guidance</h4>
+            <p>We're not registered dietitians, but we provide nutrition guidance and recommendations tailored to your fitness and body-composition goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROOF -->
+  <section style="background:var(--bg-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Beyond the Gym</div>
+        <h2>Coaching, community, and continued education.</h2>
+      </div>
+      <div class="proof-grid reveal-stagger">
+        <div class="proof-card" data-tilt>
+          <img src="assets/about1.jpg" alt="Boxing pad work training" loading="lazy" decoding="async">
+          <div class="proof-overlay"><h4>Basic Boxing Fundamentals</h4><p>Light pad work combinations during a partner workout with a client.</p></div>
+        </div>
+        <div class="proof-card" data-tilt>
+          <img src="assets/about2.jpg" alt="Community 5K run event" loading="lazy" decoding="async">
+          <div class="proof-overlay"><h4>Community Involvement</h4><p>PAPS Fitness receiving medals after the Healthy Adults Run at William T. Dwyer High School.</p></div>
+        </div>
+        <div class="proof-card" data-tilt>
+          <img src="assets/about3.jpg" alt="Speaking engagement at Florida International University" loading="lazy" decoding="async">
+          <div class="proof-overlay"><h4>Educators</h4><p>Speaking engagement with Janet Jenkins on fitness &amp; health at Florida International University.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NUTRITION -->
+  <section id="nutrition">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Nutrition &amp; Education</div>
+        <h2>Fuel that matches your goal.</h2>
+        <p>We're not registered dietitians, but nutrition guidance is built into every program. Here's a quick look at how we group foods by training goal. Tap a card for details.</p>
+      </div>
+
+      <div class="nutri-grid" id="nutriGrid">
+        <div class="nutri-card" data-tilt>
+          <div class="nutri-img"><img src="assets/carb.jpg" alt="Carbohydrate food sources" loading="lazy" decoding="async"></div>
+          <div class="nutri-body">
+            <h4>Carbohydrates <span class="plus">+</span></h4>
+            <p class="preview">Fuel for training &amp; recovery.</p>
+            <div class="nutri-panel"><div class="nutri-panel-inner">
+              <p><b>Peak 1 (leanest):</b> Alfalfa sprout, artichoke, asparagus, bell pepper, broccoli, brussels sprouts, cabbage, cauliflower, celery, collard greens, cucumber, eggplant, garlic, romaine lettuce, mushroom, parsley, peas, pickle, radish, salsa, sauerkraut, squash, and mixed steamed veggies.</p>
+              <p>Light in calories but nutrient-dense — vital when the goal is fat loss, and lowest on the glycemic scale.</p>
+            </div></div>
+          </div>
+        </div>
+        <div class="nutri-card" data-tilt>
+          <div class="nutri-img"><img src="assets/pro.jpg" alt="Protein food sources" loading="lazy" decoding="async"></div>
+          <div class="nutri-body">
+            <h4>Proteins <span class="plus">+</span></h4>
+            <p class="preview">Repair &amp; build lean muscle.</p>
+            <div class="nutri-panel"><div class="nutri-panel-inner">
+              <p><b>Fish &amp; seafood:</b> Alaskan crab, blue crab, clams, cod, grouper, flounder, haddock, halibut, lobster, mussels, and more.</p>
+              <p><b>Meat &amp; poultry:</b> Skinless chicken breast, egg whites, turkey breast, lean burger, filet mignon, lean ham &amp; pork.</p>
+              <p><b>Dairy:</b> Cottage cheese, fat-free cheese, low-fat yogurt, 1% milk.</p>
+              <p><b>Vegetarian:</b> Meatless burger, soy burger/sausage, tofu.</p>
+            </div></div>
+          </div>
+        </div>
+        <div class="nutri-card" data-tilt>
+          <div class="nutri-img"><img src="assets/fat.jpg" alt="Healthy fat food sources" loading="lazy" decoding="async"></div>
+          <div class="nutri-body">
+            <h4>Healthy Fats <span class="plus">+</span></h4>
+            <p class="preview">Omega-3s in the right amounts.</p>
+            <div class="nutri-panel"><div class="nutri-panel-inner">
+              <p><b>Nuts:</b> Almonds, brazil nuts, walnuts, pistachios, pecans, macadamia.</p>
+              <p><b>Seeds:</b> Pumpkin, sunflower.</p>
+              <p><b>Produce:</b> Avocado, guacamole, olives.</p>
+              <p><b>Oils:</b> Coconut &amp; olive (good for cooking); flax &amp; krill (use caution when cooking).</p>
+              <p>Healthy fats are calorie-dense in small volume — portion matters even when the source is "good."</p>
+            </div></div>
+          </div>
+        </div>
+        <div class="nutri-card" data-tilt>
+          <div class="nutri-img"><img src="assets/fru.jpg" alt="Peak fruit sources" loading="lazy" decoding="async"></div>
+          <div class="nutri-body">
+            <h4>Peak Fruits <span class="plus">+</span></h4>
+            <p class="preview">The most powerful picks.</p>
+            <div class="nutri-panel"><div class="nutri-panel-inner">
+              <p><b>Avocado:</b> raw fat most people are deficient in, more potassium than a banana.</p>
+              <p><b>Berries:</b> antioxidant-rich, high fiber, low sugar.</p>
+              <p><b>Guava:</b> vitamin C, lycopene, fiber, may help lower LDL cholesterol.</p>
+              <p><b>Kiwi &amp; Mango:</b> vitamins C &amp; E, potassium, folate.</p>
+              <p><b>Papaya &amp; Pineapple:</b> digestive enzymes, anti-inflammatory support, immune support.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="science-box reveal">
+        <div>
+          <h4>The Science Behind It</h4>
+          <p>Paul's programming draws on myofascial "functional line" training — the idea that muscles work in connected chains across the body, not in isolation. It's part of why sessions emphasize posture, alignment, and full-body coordination, not just reps.</p>
+        </div>
+        <a href="https://papsfitness.com/images/anatomytrainsoverview.pdf" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Read the Research →</a>
+      </div>
+
+      <div class="doc-links">
+        <a class="doc-link" href="https://papsfitness.com/images/nutritionalquestionnaire.pdf" target="_blank" rel="noopener">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0 4-4m-4 4-4-4M4 20h16"/></svg>
+          Download Nutrition Questionnaire (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SHOP -->
+  <section id="shop" class="shop-band">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <div class="eyebrow">PAPS Gear</div>
+        <h2>Rep the brand.</h2>
+        <p>Official PAPS Fitness apparel, printed and shipped by our partner store. Opens in a new tab.</p>
+      </div>
+      <div class="shop-grid reveal-stagger">
+        <div class="shop-card" data-tilt>
+          <div class="shop-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div>
+          <h5>Performance Tees</h5>
+          <span>Moisture-wicking</span>
+        </div>
+        <div class="shop-card" data-tilt>
+          <div class="shop-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div>
+          <h5>Ladies Tees</h5>
+          <span>Fitted &amp; oversized</span>
+        </div>
+        <div class="shop-card" data-tilt>
+          <div class="shop-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 1 0-16 0"/></svg></div>
+          <h5>Airlume Cotton Tees</h5>
+          <span>Classic fit</span>
+        </div>
+        <div class="shop-card" data-tilt>
+          <div class="shop-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+          <h5>More Gear</h5>
+          <span>Full collection</span>
+        </div>
+      </div>
+      <div style="text-align:center;">
+        <a href="https://www.beargrips.com/pages/paps-fitness?ref=glfgloje" target="_blank" rel="noopener" class="btn btn-primary">Shop PAPS Gear →</a>
+        <p class="shop-note">Fulfilled by our print partner · secure checkout on their site</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials">
+    <div class="container">
+      <div class="section-head center reveal" style="margin-left:auto;margin-right:auto;">
+        <div class="eyebrow">Client Results</div>
+        <h2>Real results. Real lives changed.</h2>
+        <p>What really matters is our clients achieving peak health — here's what they say about the journey.</p>
+      </div>
+
+      <div class="testi-wrap reveal">
+        <div class="testi-track-outer">
+          <div class="testi-track" id="testiTrack">
+            <!-- slides injected by JS -->
+          </div>
+        </div>
+        <div class="testi-controls">
+          <button class="testi-arrow" id="testiPrev" aria-label="Previous">
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="testi-dots" id="testiDots"></div>
+          <button class="testi-arrow" id="testiNext" aria-label="Next">
+            <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+        <div class="testi-avatars" id="testiAvatars"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="background:var(--bg-alt);border-top:1px solid var(--border);">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="eyebrow">Get In Touch</div>
+        <h2>Let's build your program.</h2>
+        <p>Call, email, or send a message below — Paul typically replies within a day.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="reveal">
+          <div class="contact-card">
+            <div class="contact-row">
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div><h5>Phone</h5><a href="tel:5615620818">(561) 562-0818</a></div>
+            </div>
+            <div class="contact-row">
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z" opacity="0"/><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+              <div><h5>Email</h5><a href="mailto:info@papsfitness.com">info@papsfitness.com</a></div>
+            </div>
+            <div class="contact-row">
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div><h5>Service Area</h5><p>Boca Raton to Jupiter, FL</p></div>
+            </div>
+            <div class="contact-row">
+              <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              <div>
+                <h5>Hours</h5>
+                <div class="hours-list">
+                  <div><span>Mon – Sun</span><span>5:00 AM – 9:00 PM</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-row">
+            <div><label>First Name</label><input type="text" name="first" required></div>
+            <div><label>Last Name</label><input type="text" name="last" required></div>
+          </div>
+          <div class="form-row">
+            <div><label>Email</label><input type="email" name="email" required></div>
+            <div><label>Phone</label><input type="tel" name="phone"></div>
+          </div>
+          <div>
+            <label>Interested In</label>
+            <select name="interest">
+              <option>Mobile Fitness Delivery</option>
+              <option>Studio / Outdoor Sessions</option>
+              <option>Virtual One-on-One</option>
+              <option>Nutrition Guidance</option>
+              <option>Not Sure Yet</option>
+            </select>
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea name="message" placeholder="Tell Paul a bit about your goals..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-content:center;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <a href="#top" class="brand"><img src="assets/logo.jpg" alt="PAPS Fitness logo"> PAPS<span>FITNESS</span></a>
+      <nav class="footer-nav">
+        <a href="#trainer">Trainer</a>
+        <a href="#services">Services</a>
+        <a href="#nutrition">Nutrition</a>
+        <a href="#shop">Shop</a>
+        <a href="#testimonials">Results</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-social">
+        <a href="https://www.instagram.com/papsfitnessfl" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+        </a>
+        <a href="https://www.facebook.com/papsfitness" target="_blank" rel="noopener" aria-label="Facebook">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+        </a>
+        <a href="https://twitter.com/papsfitnessfl" target="_blank" rel="noopener" aria-label="Twitter">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> PAPS Fitness. All rights reserved.</span>
+      <span>Boca Raton – Jupiter, FL</span>
+    </div>
+  </div>
+</footer>
+
+<button class="back-top" id="backTop" aria-label="Back to top">
+  <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<button class="consult-trigger" id="consultTrigger">
+  <span class="pulse-dot"></span>
+  <span class="trigger-label">Free Consultation</span>
+</button>
+
+<div class="modal-overlay" id="consultModal">
+  <div class="modal-card">
+    <div class="modal-photo">
+      <img src="assets/trainer.jpg" alt="Paul Anthony, PAPS Fitness">
+      <div class="modal-photo-tag">Paul Anthony · Founder</div>
+    </div>
+    <div class="modal-body">
+      <button class="modal-close" id="modalClose" aria-label="Close">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <h3>Start with a <em>free</em> consultation.</h3>
+      <p class="modal-sub">Tell Paul your goals and preferred training style — he'll follow up to schedule a no-obligation first session.</p>
+      <form class="modal-form" id="consultForm">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <select name="interest" style="width:100%;background:var(--bg-alt);border:1px solid var(--border);border-radius:var(--radius-sm);padding:14px 16px;color:var(--text);font-family:inherit;font-size:.9rem;">
+          <option>Mobile Fitness Delivery</option>
+          <option>Studio / Outdoor Sessions</option>
+          <option>Virtual One-on-One</option>
+          <option>Not Sure Yet</option>
+        </select>
+        <button type="submit" class="btn btn-primary">Get My Free Consultation →</button>
+      </form>
+      <p class="modal-fineprint">No spam, no commitment — just a call back from Paul.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* ---- Sample banner theme switch ---- */
+  var htmlEl = document.documentElement;
+  var themeGreenBtn = document.getElementById('themeGreenBtn');
+  var themeRedBtn = document.getElementById('themeRedBtn');
+  function setSampleTheme(mode){
+    htmlEl.classList.toggle('theme-red', mode === 'red');
+    themeGreenBtn.classList.toggle('active', mode !== 'red');
+    themeRedBtn.classList.toggle('active', mode === 'red');
+    try { localStorage.setItem('paps-demo-theme', mode); } catch(e){}
+  }
+  themeGreenBtn.addEventListener('click', function(){ setSampleTheme('green'); });
+  themeRedBtn.addEventListener('click', function(){ setSampleTheme('red'); });
+  try {
+    var savedTheme = localStorage.getItem('paps-demo-theme');
+    if (savedTheme === 'red') setSampleTheme('red');
+  } catch(e){}
+
+  /* ---- Header scroll state ---- */
+  var header = document.getElementById('siteHeader');
+  var backTop = document.getElementById('backTop');
+  var consultTrigger = document.getElementById('consultTrigger');
+  function onScroll(){
+    var y = window.scrollY || document.documentElement.scrollTop;
+    header.classList.toggle('scrolled', y > 40);
+    backTop.classList.toggle('show', y > 700);
+    consultTrigger.classList.toggle('show', y > 420);
+  }
+  document.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+  backTop.addEventListener('click', function(){ window.scrollTo({top:0, behavior:'smooth'}); });
+
+  /* ---- Free-consultation modal ---- */
+  var consultModal = document.getElementById('consultModal');
+  var modalClose = document.getElementById('modalClose');
+  function openModal(){ consultModal.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeModal(){ consultModal.classList.remove('open'); document.body.style.overflow = ''; }
+  consultTrigger.addEventListener('click', openModal);
+  modalClose.addEventListener('click', closeModal);
+  consultModal.addEventListener('click', function(e){ if (e.target === consultModal) closeModal(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeModal(); });
+  document.getElementById('consultForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = new FormData(e.target);
+    var body = [
+      'Name: ' + f.get('name'),
+      'Phone: ' + f.get('phone'),
+      'Interested In: ' + f.get('interest'),
+      '',
+      'Requesting a free consultation callback.'
+    ].join('\n');
+    var mailto = 'mailto:info@papsfitness.com?subject=' + encodeURIComponent('Free consultation request') + '&body=' + encodeURIComponent(body);
+    window.location.href = mailto;
+    closeModal();
+  });
+
+  /* ---- Mobile menu ---- */
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileNav = document.getElementById('mobileNav');
+  function closeMenu(){ menuBtn.classList.remove('open'); mobileNav.classList.remove('open'); document.body.style.overflow=''; }
+  menuBtn.addEventListener('click', function(){
+    var open = menuBtn.classList.toggle('open');
+    mobileNav.classList.toggle('open', open);
+    document.body.style.overflow = open ? 'hidden' : '';
+  });
+  mobileNav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  /* ---- Fine-pointer feature detect ---- */
+  var hasFinePointer = window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches;
+
+  /* ---- Custom cursor ---- */
+  if (hasFinePointer) {
+    var cursorDot = document.getElementById('cursorDot');
+    var cursorRing = document.getElementById('cursorRing');
+    var cx = 0, cy = 0, rx = 0, ry = 0;
+    document.addEventListener('mousemove', function(e){
+      cx = e.clientX; cy = e.clientY;
+      cursorDot.style.transform = 'translate(' + cx + 'px,' + cy + 'px) translate(-50%,-50%)';
+      document.body.classList.add('cursor-ready');
+    }, {passive:true});
+    (function ringLoop(){
+      rx += (cx - rx) * 0.18;
+      ry += (cy - ry) * 0.18;
+      cursorRing.style.transform = 'translate(' + rx + 'px,' + ry + 'px) translate(-50%,-50%)';
+      requestAnimationFrame(ringLoop);
+    })();
+    window.bindCursorHover = function(el){
+      el.addEventListener('mouseenter', function(){ cursorRing.classList.add('hovering'); });
+      el.addEventListener('mouseleave', function(){ cursorRing.classList.remove('hovering'); });
+    };
+    document.querySelectorAll('a, button, [data-tilt], input, textarea, select').forEach(window.bindCursorHover);
+  }
+
+  /* ---- Tilt-on-hover cards ---- */
+  window.bindTilt = function(card){
+    if (!hasFinePointer) return;
+    card.style.transformStyle = 'preserve-3d';
+    card.addEventListener('mousemove', function(e){
+      var r = card.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width - 0.5;
+      var py = (e.clientY - r.top) / r.height - 0.5;
+      card.style.transform = 'perspective(700px) rotateX(' + (py * -7) + 'deg) rotateY(' + (px * 9) + 'deg) translateY(-4px)';
+    });
+    card.addEventListener('mouseleave', function(){
+      card.style.transform = '';
+    });
+  };
+  document.querySelectorAll('[data-tilt]').forEach(window.bindTilt);
+
+  /* ---- Magnetic buttons ---- */
+  if (hasFinePointer) {
+    document.querySelectorAll('.magnetic').forEach(function(btn){
+      btn.addEventListener('mousemove', function(e){
+        var r = btn.getBoundingClientRect();
+        var mx = (e.clientX - r.left - r.width / 2) * 0.28;
+        var my = (e.clientY - r.top - r.height / 2) * 0.5;
+        btn.style.transform = 'translate(' + mx + 'px,' + my + 'px)';
+      });
+      btn.addEventListener('mouseleave', function(){ btn.style.transform = ''; });
+    });
+  }
+
+  /* ---- Hero spotlight follows cursor ---- */
+  var heroSection = document.getElementById('heroSection');
+  var heroSpotlight = document.getElementById('heroSpotlight');
+  if (heroSection && hasFinePointer) {
+    heroSection.addEventListener('mousemove', function(e){
+      var r = heroSection.getBoundingClientRect();
+      var mx = ((e.clientX - r.left) / r.width) * 100;
+      var my = ((e.clientY - r.top) / r.height) * 100;
+      heroSpotlight.style.setProperty('--mx', mx + '%');
+      heroSpotlight.style.setProperty('--my', my + '%');
+    });
+  }
+
+  /* ---- Hero training-style picker ---- */
+  var pickerChips = document.querySelectorAll('.picker-chip');
+  pickerChips.forEach(function(chip){
+    chip.addEventListener('click', function(){
+      pickerChips.forEach(function(c){ c.classList.remove('active'); });
+      chip.classList.add('active');
+      var idx = chip.getAttribute('data-target');
+      var target = document.querySelector('.service-card[data-service-idx="' + idx + '"]');
+      if (target) {
+        target.scrollIntoView({behavior:'smooth', block:'center'});
+        target.classList.add('flash');
+        setTimeout(function(){ target.classList.remove('flash'); }, 1600);
+      }
+    });
+  });
+
+  /* ---- Scroll-spy active nav link ---- */
+  var navLinks = document.querySelectorAll('#desktopNav a');
+  var sections = Array.prototype.slice.call(navLinks).map(function(a){
+    return document.querySelector(a.getAttribute('href'));
+  }).filter(Boolean);
+
+  function updateSpy(){
+    var y = window.scrollY + 140;
+    var activeIdx = -1;
+    sections.forEach(function(sec, i){
+      if (sec.offsetTop <= y) activeIdx = i;
+    });
+    navLinks.forEach(function(a, i){ a.classList.toggle('active', i === activeIdx); });
+  }
+  document.addEventListener('scroll', updateSpy, {passive:true});
+  updateSpy();
+
+  /* ---- Scroll reveal via IntersectionObserver ---- */
+  var revealEls = document.querySelectorAll('.reveal, .reveal-stagger');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          if (entry.target.classList.contains('reveal-stagger')) {
+            Array.prototype.forEach.call(entry.target.children, function(child, i){
+              child.style.setProperty('--i', i);
+              child.style.opacity = 0;
+              child.style.transform = 'translateY(28px)';
+              child.style.transition = 'opacity .7s var(--ease), transform .7s var(--ease)';
+              child.style.transitionDelay = (i*90)+'ms';
+              requestAnimationFrame(function(){
+                requestAnimationFrame(function(){
+                  child.style.opacity = 1;
+                  child.style.transform = 'translateY(0)';
+                });
+              });
+            });
+          }
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:.15, rootMargin:'0px 0px -60px 0px'});
+    revealEls.forEach(function(el){ io.observe(el); });
+  } else {
+    revealEls.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  /* ---- Animated stat counters ---- */
+  var counters = document.querySelectorAll('[data-count]');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    var suffix = el.getAttribute('data-suffix') || '';
+    var isYear = el.getAttribute('data-format') === 'year';
+    var start = isYear ? target - 12 : 0;
+    var dur = 1400;
+    var t0 = null;
+    function step(ts){
+      if (!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1);
+      var eased = 1 - Math.pow(1 - p, 3);
+      var val = Math.round(start + (target - start) * eased);
+      el.textContent = val + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  if ('IntersectionObserver' in window && counters.length) {
+    var cIo = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) { animateCount(entry.target); cIo.unobserve(entry.target); }
+      });
+    }, {threshold:.5});
+    counters.forEach(function(el){ cIo.observe(el); });
+  }
+
+  /* ---- Nutrition accordion ---- */
+  document.querySelectorAll('.nutri-card').forEach(function(card){
+    card.addEventListener('click', function(){
+      var wasOpen = card.classList.contains('open');
+      document.querySelectorAll('.nutri-card').forEach(function(c){ c.classList.remove('open'); });
+      if (!wasOpen) card.classList.add('open');
+    });
+  });
+
+  /* ---- Testimonials data + carousel ---- */
+  var testimonials = [
+    {name:"Julia J.", role:"Lost 60 lbs · 5 months", img:"c1.jpg", text:"I made the decision to do something for myself. Paul Anthony came into my life completely by chance — I was immediately impressed by his professionalism and genuine spirit. Over the past five months I've lost roughly 60 pounds, gone from a tight size 16 to a legit size 6, and I finally feel like myself again. All because of Paul's never-ending motivation and confidence in me."},
+    {name:"Barbara K.", role:"Client", img:"c2.jpg", text:"The wish for a healthy tomorrow can be the most important thing in life. Meeting and working with Paul Anthony — his level of education and his intelligent approach to physical and emotional development — has given me the option to fulfill that wish. He has been a gift for the future."},
+    {name:"Ruby P.", role:"2 years training", img:"c3.jpg", text:"I can't believe how much I've progressed working with Paul. I'm pushing 50 and feeling every bit of it — but in the two years since I started, my joints no longer ache and I've gained strength I never knew I had. He put me on a regimen including a diet and supplement plan, and it has worked."},
+    {name:"Tina C.", role:"Lost 40 lbs · 6 months", img:"TinaC.jpg", text:"Paul Anthony is an incredible trainer. I've been working with him for six months and have lost 40 pounds."},
+    {name:"Carmen M.", role:"Client, 4 months", img:"c6.jpg", text:"My experience with PAPS has been excellent! I have diabetes, and Paul is helping me maintain my sugar levels with nutrition plans and amazing workouts. My body, my health, my resistance, and my strength are all improving. I'm very happy to be part of PAPS."},
+    {name:"Shantelle C.", role:"Client", img:"c7.jpg", text:"PAPS Fitness is a blessing in my life. I was stuck doing the same old thing and not defining my body until I met the trainers at PAPS. They represent dedication and a high level of expertise — helping you reach your fitness goals one day at a time."},
+    {name:"Mariyln M.", role:"Age 70, 1 month training", img:"c8.jpg", text:"Today, at age 70, I was able to beat my nemesis the Bosu Ball by accomplishing single leg lifts. Paul is an exceptional trainer who has, in such a short time, worked wonders with my balance, strength, and energy."},
+    {name:"Theresa P.", role:"Client since 2014", img:"c4.jpg", text:"Working with Paul has changed the way I walk in life — literally — without pain in my knees or weakness in my back. Within 6 sessions I was seeing results. The pain in my knees lessened, the weakness in my back was gone, and I was standing straighter and stronger. Now I'm on the stair master 20 minutes pain-free."},
+    {name:"Jason Finch", role:"2 years training", img:"c11.jpg", text:"As an aging former college athlete now in my late 40s, my goal is to stay fluid and in motion so I can be an active dad with my daughter. Paul's unique approach has helped me achieve that while becoming stronger and more flexible than I've ever been."},
+    {name:"Joy B.", role:"Client", img:"c5.jpg", text:"Paul has great knowledge of training the entire body while determining each client's individual abilities. His pleasant, positive attitude instills confidence and encouragement to make you want to work harder and apply yourself more."}
+  ];
+
+  var track = document.getElementById('testiTrack');
+  var dotsWrap = document.getElementById('testiDots');
+  var avatarsWrap = document.getElementById('testiAvatars');
+
+  testimonials.forEach(function(t, i){
+    var slide = document.createElement('div');
+    slide.className = 'testi-slide';
+    slide.innerHTML =
+      '<div class="testi-card" data-tilt>' +
+        '<div class="testi-avatar"><img src="assets/'+t.img+'" alt="'+t.name+'" loading="lazy" decoding="async"></div>' +
+        '<div class="testi-body"><q>'+t.text+'</q><div class="testi-name">'+t.name+'</div><div class="testi-role">'+t.role+'</div></div>' +
+      '</div>';
+    track.appendChild(slide);
+    var newTiltCard = slide.querySelector('[data-tilt]');
+    if (newTiltCard) {
+      if (window.bindTilt) window.bindTilt(newTiltCard);
+      if (window.bindCursorHover) window.bindCursorHover(newTiltCard);
+    }
+
+    var dot = document.createElement('button');
+    dot.className = 'testi-dot' + (i===0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Go to testimonial '+(i+1));
+    dot.addEventListener('click', function(){ goTo(i); });
+    if (window.bindCursorHover) window.bindCursorHover(dot);
+    dotsWrap.appendChild(dot);
+
+    var av = document.createElement('button');
+    av.className = i===0 ? 'active' : '';
+    av.innerHTML = '<img src="assets/'+t.img+'" alt="'+t.name+'" loading="lazy" decoding="async">';
+    av.addEventListener('click', function(){ goTo(i); });
+    if (window.bindCursorHover) window.bindCursorHover(av);
+    avatarsWrap.appendChild(av);
+  });
+
+  var current = 0;
+  var total = testimonials.length;
+  var autoTimer;
+
+  function render(){
+    track.style.transform = 'translateX(-' + (current * 100) + '%)';
+    dotsWrap.querySelectorAll('.testi-dot').forEach(function(d, i){ d.classList.toggle('active', i===current); });
+    avatarsWrap.querySelectorAll('button').forEach(function(b, i){ b.classList.toggle('active', i===current); });
+  }
+  function goTo(i){ current = ((i % total) + total) % total; render(); restartAuto(); }
+  function next(){ goTo(current+1); }
+  function prev(){ goTo(current-1); }
+  function restartAuto(){
+    clearInterval(autoTimer);
+    autoTimer = setInterval(next, 6500);
+  }
+
+  document.getElementById('testiNext').addEventListener('click', next);
+  document.getElementById('testiPrev').addEventListener('click', prev);
+
+  var testiWrap = document.querySelector('.testi-wrap');
+  testiWrap.addEventListener('mouseenter', function(){ clearInterval(autoTimer); });
+  testiWrap.addEventListener('mouseleave', restartAuto);
+
+  /* touch swipe */
+  var touchStartX = null;
+  var trackOuter = document.querySelector('.testi-track-outer');
+  trackOuter.addEventListener('touchstart', function(e){ touchStartX = e.touches[0].clientX; }, {passive:true});
+  trackOuter.addEventListener('touchend', function(e){
+    if (touchStartX === null) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    if (Math.abs(dx) > 40) { dx < 0 ? next() : prev(); }
+    touchStartX = null;
+  }, {passive:true});
+
+  render();
+  restartAuto();
+
+  /* ---- Contact form (no backend — mailto fallback) ---- */
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    var f = new FormData(e.target);
+    var body = [
+      'Name: ' + f.get('first') + ' ' + f.get('last'),
+      'Email: ' + f.get('email'),
+      'Phone: ' + f.get('phone'),
+      'Interested In: ' + f.get('interest'),
+      '',
+      f.get('message')
+    ].join('\n');
+    var mailto = 'mailto:info@papsfitness.com?subject=' + encodeURIComponent('New inquiry from papsfitness.com') + '&body=' + encodeURIComponent(body);
+    window.location.href = mailto;
+  });
+
+})();
+</script>
+
+</body>
+</html>
