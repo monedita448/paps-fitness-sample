@@ -80,6 +80,21 @@
     --volt-rgb:232,64,44;
     --on-volt:#ffffff;
   }
+  html.theme-orange{
+    --volt:#ff8a1f;
+    --volt-rgb:255,138,31;
+    --on-volt:#0a0a0c;
+  }
+  html.theme-blue{
+    --volt:#3b9eff;
+    --volt-rgb:59,158,255;
+    --on-volt:#ffffff;
+  }
+  html.theme-purple{
+    --volt:#b06cff;
+    --volt-rgb:176,108,255;
+    --on-volt:#ffffff;
+  }
 
   *{margin:0;padding:0;box-sizing:border-box;}
   html{scroll-behavior:smooth;}
@@ -159,6 +174,9 @@
   .theme-switch .swatch.active{border-color:var(--text);}
   .swatch-green{background:#b6ff1c;}
   .swatch-red{background:#e8402c;}
+  .swatch-orange{background:#ff8a1f;}
+  .swatch-blue{background:#3b9eff;}
+  .swatch-purple{background:#b06cff;}
   @media(max-width:680px){
     .sample-banner{flex-direction:column;justify-content:center;align-items:flex-start;padding:10px 20px;gap:6px;}
   }
@@ -642,10 +660,13 @@
     <span class="banner-brand">COLHQ<em>.com</em></span>
     <span class="banner-tag">Sample Website</span>
   </div>
-  <div class="theme-switch">
+  <div class="theme-switch" id="themeSwitch">
     <span>Theme</span>
-    <button class="swatch swatch-green active" id="themeGreenBtn" aria-label="Switch to green theme"></button>
-    <button class="swatch swatch-red" id="themeRedBtn" aria-label="Switch to red theme"></button>
+    <button class="swatch swatch-green active" data-theme="green" aria-label="Switch to green theme"></button>
+    <button class="swatch swatch-red" data-theme="red" aria-label="Switch to red theme"></button>
+    <button class="swatch swatch-orange" data-theme="orange" aria-label="Switch to orange theme"></button>
+    <button class="swatch swatch-blue" data-theme="blue" aria-label="Switch to blue theme"></button>
+    <button class="swatch swatch-purple" data-theme="purple" aria-label="Switch to purple theme"></button>
   </div>
 </div>
 
@@ -1202,19 +1223,21 @@
 
   /* ---- Sample banner theme switch ---- */
   var htmlEl = document.documentElement;
-  var themeGreenBtn = document.getElementById('themeGreenBtn');
-  var themeRedBtn = document.getElementById('themeRedBtn');
+  var themeModes = ['green', 'red', 'orange', 'blue', 'purple'];
+  var themeSwatches = document.querySelectorAll('#themeSwitch .swatch');
   function setSampleTheme(mode){
-    htmlEl.classList.toggle('theme-red', mode === 'red');
-    themeGreenBtn.classList.toggle('active', mode !== 'red');
-    themeRedBtn.classList.toggle('active', mode === 'red');
+    if (themeModes.indexOf(mode) === -1) mode = 'green';
+    themeModes.forEach(function(m){ htmlEl.classList.remove('theme-' + m); });
+    if (mode !== 'green') htmlEl.classList.add('theme-' + mode);
+    themeSwatches.forEach(function(btn){ btn.classList.toggle('active', btn.getAttribute('data-theme') === mode); });
     try { localStorage.setItem('paps-demo-theme', mode); } catch(e){}
   }
-  themeGreenBtn.addEventListener('click', function(){ setSampleTheme('green'); });
-  themeRedBtn.addEventListener('click', function(){ setSampleTheme('red'); });
+  themeSwatches.forEach(function(btn){
+    btn.addEventListener('click', function(){ setSampleTheme(btn.getAttribute('data-theme')); });
+  });
   try {
     var savedTheme = localStorage.getItem('paps-demo-theme');
-    if (savedTheme === 'red') setSampleTheme('red');
+    if (savedTheme) setSampleTheme(savedTheme);
   } catch(e){}
 
   /* ---- Header scroll state ---- */
